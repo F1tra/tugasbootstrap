@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <title>Company profile</title>
+    <style>
+      
+      nav.navbar {
+        z-index: 1;
+        
+      }
+      .jumbotron .row-img {
+        width: 100%;
+        height: 110vh;
+        background-image: url(2.jpg);
+        background-position: center;
+        margin-top: -60px;
+        position: relative;
+      }
+      .jumbotron .row-img::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(148, 85, 190, 0.267);
+      }
+      .about .row-img {
+        width: 100%;
+      }
+      .about .row-img .md5:nth-child(1){
+        background-color: #273036;
+        width: 50%;
+        height: 100vh;
+      }
+      .about .row-img .md5:nth-child(2) {
+        background-image: url('kern.jpg');
+        width: 50%; 
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+      }
+      .service{
+        height: 200px;
+        background-color:#273036;
+        color: rgb(255, 255, 255);
+        padding-top: 10px;
+
+      }
+      .teknologi{
+        background-color:#273036 ;
+      }
+      p{
+        color: white;
+      }
+      h2{
+        color: white;
+      }
+      h3{
+        color: white;
+      }
+      .teknologi .row .col-4 .card{
+        height: 350px;
+      }
+      .teknologi .row .col-4 .card .card-body{
+        font-size: 8em;
+        
+      }
+      .teknologi .row:noth-chil(2) .col-md-4{
+        background-image: url();
+      }
+      /* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { }
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .teknologi .row .col-4 .card .card-body{
+        font-size: 8em;
+}
+}
+.client{
+  background-color:rgb(32, 15, 46) ;
+  text-align: center;
+  color: white;
+}
+.contact {
+        background-color: #273036;
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a
+        class="navbar-brand"
+        href="#"
+        style="color: rgb(0, 81, 255)"
+        >Fm4ulp</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse"
+        id="navbarNav"
+      >
+        <div class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="#home"
+              style="color: rgb(0, 81, 255)"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#about"
+              style="color: rgb(0, 81, 255)"
+              >About</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#service"
+              style="color: rgb(0, 81, 255)"
+              >Service</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#client"
+              style="color: rgb(0, 81, 255)"
+              >Client</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#Location"
+              style="color: rgb(0, 81, 255)"
+              >Location</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#contact"
+              style="color: rgb(0, 81, 255)"
+              >Contact</a
+            >
+          </li>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <section
+    id="home"
+    class="jumbotron"
+  >
+    <div class="row-img d-flex justify-content-center align-items-center">
+      <div class="col-md-6">
+        <div data-aos="fade-down">
+        <h2 style="color: white">Hallo</h2>
+        <p style="color: white">selamat datang di website saya</p>
+      </div>
+    </div>
+  </section>
+  <!-- about -->
+  <section
+    id="about"
+    class="about">
+    <div class="row-img d-flex">
+        <div class="md5 p-5 d-flex justify-content-center align-items-center flex-column">
+          <h3>About Use</h3>
+          <p>Nama       :Fitra maulana pratama</p>
+          <p>Saya seorang desainer website sekaligus seorang servis pada sebuh teknologi bug code pada sebuah web
+          </p>
+        </div>
+        <div class="md5"></div>
+      </div>
+    </div>
+  </section>
+  <!-- servis -->
+  <section id="service" class="service">
+    <div data-aos="flip-up">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-12">
+          <h4 class="fw-bold fs-1">Servis</h4>
+        <p>saya bisa memperbaiki semua pada sebuah yang saya tampilkan di bawah</p>  
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- technologi -->
+  <section class="teknologi" class="teknologi">
+    <div class="container">
+      <div class="row text-center mb-3">
+        <div class="col-4">
+          <div class="card">
+            <div class="card-body mt-5">
+              <i class="bi bi-code-square"></i>
+              <h5>Code</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card">
+            <div class="card-body mt-5">
+              <i class="bi bi-book-half"></i>
+             <h6>Design</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card">
+            <div class="card-body mt-5">
+              <i class="bi bi-bug-fill"></i>
+              <h6>Bug</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" > 
+        <div class="col-md-8">
+          <h2 class="pw-bold fs-1 text-center "> Teknologi</h2>
+        <p>teknologi merupakan ilmiah untuk mencapai tujuan praktis, ilmu pengetahuan terapan atau keseluruhan sarana untuk menyediakan barang-barang yang diperlukan bagi kelangsungan dan kenyamanan hidup manusia.</p>
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+    </div>
+  </section>
+  <!-- client -->
+  <section id="client" class="client">
+    <div class="container">
+      <div class="row">
+        <div class="col-8">
+          <h4 class="fw-bold ">CLient</h4>
+        <p>Saya akan melayani client saya dengan baik dan saya baklan mengusahakan apa yang ada mau pada onerapran jasa yang telah anda percaya apda kami</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- location-->
+  <section id="Location">
+    <div class="container">
+      <h1
+        class="text-center"
+        style="padding-bottom: 30px"
+      >
+        Location
+      </h1>
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31692.54380522344!2d107.12017577811186!3d-6.8222799224353246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6852f4f71b004b%3A0x401e8f1fc28dad0!2sCianjur%2C%20Kec.%20Cianjur%2C%20Kabupaten%20Cianjur%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1665986854423!5m2!1sid!2sid"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+    <!-- contact -->
+    <div id="contact">
+      <section class="contact">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+        >
+          <path
+            fill="#ffffff"
+            fill-opacity="1"
+            d="M0,96L24,128C48,160,96,224,144,245.3C192,267,240,245,288,234.7C336,224,384,224,432,229.3C480,235,528,245,576,218.7C624,192,672,128,720,138.7C768,149,816,235,864,250.7C912,267,960,213,1008,186.7C1056,160,1104,160,1152,165.3C1200,171,1248,181,1296,160C1344,139,1392,85,1416,58.7L1440,32L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z"
+          ></path>
+        </svg>
+        <h4
+          class="text-center"
+          style="padding-bottom: 20px; padding-top: 20px"
+        >
+          Contact
+        </h4>
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label
+              for="inputnamadepan"
+              class="form-label"
+              >First name</label
+            >
+            <input
+              type="namadepan"
+              class="form-control"
+              id="inputnamadepan"
+            />
+          </div>
+          <div class="col-md-6">
+            <label
+              for="inputnamabelakang"
+              class="form-label"
+              >Last name</label
+            >
+            <input
+              type="namabelakang"
+              class="form-control"
+              id="inputnamabelakang"
+            />
+          </div>
+
+          <div class="col-md-6">
+            <label
+              for="inputEmail4"
+              class="form-label"
+              >Email</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="inputEmail4"
+            />
+          </div>
+          <div class="col-6">
+            <label
+              for="inputEmailaddress"
+              class="form-label"
+              >Email address</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="inputEmailaddress"
+              placeholder="1234232"
+            />
+          </div>
+          <div class="col-12 mb -6">
+            <label
+              for="inputCity"
+              class="form-label"
+              >Message
+            </label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputCity"
+            />
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="gridCheck"
+              />
+              <label
+                class="form-check-label"
+                for="gridCheck"
+              >
+                Check me out
+              </label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button
+              type="submit"
+              class="btn btn-primary"
+            >
+              Send
+            </button>
+          </div>
+        </form>
+      </section>
+    </div>
+    <!-- Akhir contact -->
+
+</html>
